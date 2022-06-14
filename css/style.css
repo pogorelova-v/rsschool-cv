@@ -1,0 +1,135 @@
+html {
+    scroll-behavior: smooth; 
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #000000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    background-color: #505050;
+}
+.section-title {
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 5px;
+    color: rgb(0, 255, 13);
+    position: relative;
+  }
+.section-title::after{
+  content: "";
+  position: absolute;
+  top: 30px;
+  left: 0;
+  width: 90%;
+  height: 2px; 
+  background-color: blueviolet;
+}
+
+.header{
+    background-color: rgb(0, 0, 0);
+}
+h1{
+    font-size: 30px;
+    font-weight: 700;
+}
+.avatar{
+    width: 300px;
+    border-radius: 50%;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.main-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+.section {
+    width: 50%;
+  }
+.section:first-child {
+    width: 100%;
+    text-align: center;
+}
+.section-link a{
+    color: #000000;
+    text-decoration: none;
+}
+.section-link a:hover{
+    color: rgb(0, 255, 13);
+}
+
+.nav-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+}
+.nav-link {
+    padding: 0 10px;
+    line-height: 50px;
+    text-decoration: none;  
+    transition: .3s;
+    color: blueviolet;
+}
+.nav-link:hover{
+    color: rgb(0, 255, 13);
+}
+footer{
+    background-color: #000000;
+    padding: 15px 15px;
+}
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+ footer p{
+    color: blueviolet;
+ }
+ footer img{
+    width: 150px;
+ }
+.footer-image{
+  background-color: white;
+  box-shadow: 0 0 10px 10px white;
+  transition: .3s;
+}
+.footer-image:hover{
+    box-shadow: 0 0 10px 10px rgb(0, 255, 13);
+    background-color: rgb(0, 255, 13);
+}
+footer a{
+    padding: 0 10px;
+    line-height: 50px;
+    text-decoration: none;  
+    transition: .3s;
+    color: blueviolet;
+}
+footer a:hover{
+    color:rgb(0, 255, 13) ;
+}
+
+
+
+@media (max-width: 768px) {
+    .section {
+      width: 100%;
+      margin: 0 10px;
+    }
+  }
+
+  
