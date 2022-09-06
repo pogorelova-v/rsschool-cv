@@ -13,3 +13,6 @@ function multiply(a, b){
 };
 ```
 6. I have no work experience in the field of it.
+7. There is no education, and I have not attended courses in the field
+of information technology
+8. My knowledge of English is so poor that I am writing this resume through a translator
