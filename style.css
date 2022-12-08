@@ -177,6 +177,13 @@ border: solid blueviolet 1px;
     align-items: center;
     text-decoration: none;
     font-size: 18px;
+    transition: all 0.2s;
+}
+.contacts ul li a:hover{
+    color: var(--orang);
+    transform: scale(1.2);   
+    transition: all 0.2s;
+    margin-left: 15px;
 }
 .contacts ul li a img{
     margin-right: 10px;
