@@ -7,7 +7,7 @@
 border: solid blueviolet 1px;
 */
 body{
-    margin-top: 50px;
+    padding: 50px 0;
     background-color: rgb(202, 202, 202);
     font-family: 'Source Serif Pro', serif;
     line-height: 110%;
@@ -74,7 +74,6 @@ border: solid blueviolet 1px;
 
 .info-work {
     background-color: var(--white);
-    height: 50px;
     width: 65%;
 }
 .info-human {
@@ -268,4 +267,164 @@ border: solid blueviolet 1px;
     background-color: #8d4b00; 
 }
 
+/*----------------------*/
 
+.my-name {
+    width: 80%;
+    margin: 50px auto;
+    border: var(--gray) 3px solid;
+    border-radius: 10px;
+}
+.my-fio-name span{
+    display: inline-block;
+    font-family: 'Lobster Two', serif;
+    letter-spacing: 5px;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 110%;
+    color: var(--orang);    
+    background-color: var(--white);
+    padding: 0 5px;
+}
+.my-fio-name span:last-child{
+    border-bottom: 3px solid var(--gray);
+}
+.my-fio-name{
+    margin: -10px 0 10px 20px;
+}
+.my-prof-name{
+    margin:  -5px 0 10px 25px;
+}
+
+
+/*------------------------*/
+.project,
+.code{
+    width: 80%;
+    margin: 0 auto 30px auto;
+}
+.project a{
+    color: var(--orang);
+    text-decoration: none;
+    font-size: 20px;
+}
+.project-h2-wrap,
+.code-h2-wrap{
+    margin-bottom: 30px;
+    height: 35px;
+    background-color: var(--orang);
+    border-radius: 20px;
+    box-shadow: 1px 1px 10px #666666;
+    display: flex;
+    align-items: center;
+    font-family: 'Lobster Two', serif;
+    font-size: 24px;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+.project-h2-wrap h2,
+.code-h2-wrap h2{
+    width: 80%;
+    text-align: center;
+}
+.project-img img,
+.code-img img{
+    width: 100%;
+}
+.project-img,
+.code-img{
+    width: 50px;
+    padding: 5px;
+    background-color: var(--orang);
+    border-radius: 50%;
+    border: solid 7px var(--gray);
+    box-shadow: 1px 1px 10px 1px #666666;
+}
+
+.project-text dl,
+.code-text dl{
+    position: relative;
+    border-left: 4px solid var(--gray);
+    padding-left: 20px;
+    padding-bottom: 15px;
+}
+.project-text dl::before,
+.code-text dl::before{
+    content: '';
+    position: absolute;
+    left: -12px;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: var(--orang);
+}
+.project-text dl dt,
+.code-text dl dt{
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--orang);
+}
+.project-text dl dd,
+.code-text dl dd{
+    margin: 5px 20px;
+}
+
+/*-----------------------------*/
+footer a{
+    display: block;
+    color: #fff;
+    text-decoration: none;
+}
+footer img{
+    height: 40px;
+}
+.gratitude{
+    background-color: var(--gray);
+    width: 65%;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+}
+.gratitude a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;      
+    transition: all 0.2s;
+}
+.gratitude a img{
+    margin-bottom: 10px;
+}
+.gratitude a:hover{
+    color: var(--orang);
+    transform: scale(1.2);   
+    transition: all 0.2s;
+}
+.autor{
+    background-color: var(--orang);
+    width: 35%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.autor a{      
+    transition: all 0.2s;
+}
+.autor a:hover{
+    transform: scale(1.2);   
+    transition: all 0.2s;
+}
+.autor::before{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: var(--orang);
+    transform: rotate(45deg);
+    top: -10px;
+    left: 50%;
+    z-index: 5;
+}

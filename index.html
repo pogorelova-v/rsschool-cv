@@ -35,7 +35,101 @@
             <div class="info-work">
                 
                 <div class="my-name">
+                    <div class="my-fio-name">
+                        <span>Valeria</span> 
+                        <br>
+                        <span>Pogorelova</span>
+                    </div>
+                    <div class="my-prof-name">
+                        <span> 
+                            Novice Frontend Developer
+                        </span>
+                    </div>
+                </div>
 
+                <div class="project">
+                    <div class="project-h2-wrap">
+                        <h2>Completed Projects</h2>
+                        <div class="project-img">
+                            <img src="assets/portfolio.png" alt="project">
+                        </div>
+                    </div>
+                    <div class="project-text">
+                        <dl>
+                            <dt>Nizhny Novgorod car service</dt>
+                            <dd>
+                                <span>Director's quote:</span>
+                                <p>"Many customers have known us personally for a long time, we have been on the Nizhny Novgorod market for more than 7 years.We worked in a narrow direction, but now our horizons are open!"</p>
+                                    <a target="_blank" href="https://техпрофи-нн.рф/main/advantages.html">техпрофи-нн.рф</a>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>Kstovo car service</dt>
+                            <dd>
+                                <span>Director's quote:</span>
+                                <p>"Have you been dreaming of pumping your car / moto / quad equipment for a long time? Do not have enough time and energy?The AUTOMOTIVE team will make a real beast out of your ca"</p>
+                                    <a href="https://automotive52.ru/" target="_blank">automotive52.ru</a>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>Nizhny Novgorod cleaning of wells</dt>
+                            <dd>
+                                <span>Director's quote:</span>
+                                <p>"Cleaning of wells, Increasing/restoring the flow rate of wells, Lifting stuck pumps, Replacing failed pumps, Troubleshooting in the water supply system, Installation of engineering systems"</p>
+                                    <a target="_blank" href="https://гидротехсервис.рф/">гидротехсервис.рф</a>
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+
+                <div class="code">
+                    <div class="code-h2-wrap">
+                        <h2>Code Examples</h2>
+                        <div class="code-img">
+                            <img src="assets/html.png" alt="project">
+                        </div>
+                    </div>
+                    <div class="code-text">
+                        <dl>
+                            <dt>HTML</dt>
+                            <dd>
+                                <pre>
+ &lt;h2&gt;Completed Projects&lt;/h2&gt;
+ &lt;div class="project-img"&gt;
+ &lt;img src="assets/portfolio.png" alt="project"&gt;
+ &lt;/div&gt;                                </pre>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>CSS</dt>
+                            <dd>
+                                <pre>
+.my-fio-name span{
+    display: inline-block;
+    line-height: 110%;    
+    font-family: 'Lobster Two', serif;
+    letter-spacing: 5px;
+    color: var(--orang);
+}
+.my-fio-name span:last-child{
+    border-bottom: 3px solid var(--gray);
+}
+                                </pre>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>JS</dt>
+                            <dd>
+                                <pre>
+const servicesMenu = document.querySelector('.services-menu');
+
+servicesMenu.addEventListener('click', () => {
+    burgerBarContent.classList.toggle('active');    
+});
+                                </pre>
+                            </dd>
+                        </dl>
+                    </div>
                 </div>
 
             </div>
@@ -51,10 +145,10 @@
                     <h2>About my</h2>
                 </div>
                 <div class="about-my info-human-elem">
-                        <p>Самостоятельно изучаю Front-end разработку.</p>
-                        <p>Прошла прошлый набор stage0 в The Rolling Scopes School, имею <a href="https://app.rs.school/certificate/n71rz8ca">сертификат</a> об успешном завершении.</p>
-                        <p>Провалила первую попытку обучения на stage1.</p>
-                        <P>Обязательно буду поступать ещё раз!</P>
+                        <p>I study Front-end development on my own.</p>
+                        <p>I passed the last stage 0 set at The Rolling Stones School, I have a <a target="_blank" href="https://app.rs.school/certificate/n71rz8ca">certificate </a> of successful completion.</p>
+                        <p>Failed the first attempt of training at stage 1.</p>
+                        <p>I will definitely do it again!</p>
                 </div>
 
                 <div class="contacts info-human-h2">
@@ -176,12 +270,40 @@
                     </div>
 
                 </div>
+
+                <div class="education info-human-h2">
+                    <h2>Education</h2>
+                </div>
+                <div class="about-my info-human-elem">
+                        <p>Unfinished Higher Education Faculty of General Psychoology</p>
+                </div>
+
             </div>
         </div>
 
     </main>
 
-    <footer></footer>
+    <footer>
+        <div class="container">
+            <div class="gratitude">
+                    <a target="_blank" href="https://github.com/pogorelova-v">
+                    <img src="assets/github.png" alt="github">
+                    GitHub
+                    </a>
+                    <a target="_blank" href="https://rs.school/">
+                        <img src="assets/rs.png" alt="RS School">
+                        RS School
+                    </a>
+                    <a target="_blank" href="https://rs.school/js-stage0/">
+                        <img src="assets/rs-course.png" alt="JavaScript/Front-end. Stage 0">
+                        JS/FE Stage 0
+                        </a>
+            </div>
+            <div class="autor">
+                <a target="_blank" href="mailto:developer@don-dragon.ru">2022© developer@don-dragon.ru</a>
+            </div>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
 </body>
