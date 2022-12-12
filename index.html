@@ -16,13 +16,12 @@
         <div class="container">
             <nav>
                 <ul>
-                    <li><a href="#">About my</a></li>
-                    <li><a href="#">Contacts</a></li>
-                    <li><a href="#">Skills</a></li>
-                    <li><a href="#">Language</a></li>
-                    <li><a href="#">Project</a></li>
-                    <li><a href="#">Education</a></li>
-                    <li><a href="#">Gratitude</a></li>
+                    <li><a id="about" href="#">About my</a></li>
+                    <li><a id="contacts" href="#">Contacts</a></li>
+                    <li><a id="skills" href="#">Skills</a></li>
+                    <li><a id="language" href="#">Language</a></li>
+                    <li><a id="project" href="#">Project</a></li>
+                    <li><a id="examples" href="#">Examples</a></li>
                 </ul>
             </nav>
             <div class="head-cap"></div>
@@ -47,7 +46,7 @@
                     </div>
                 </div>
 
-                <div class="project">
+                <div class="project" id="projectBlock">
                     <div class="project-h2-wrap">
                         <h2>Completed Projects</h2>
                         <div class="project-img">
@@ -82,7 +81,7 @@
                     </div>
                 </div>
 
-                <div class="code">
+                <div class="code" id="examplesBlock">
                     <div class="code-h2-wrap">
                         <h2>Code Examples</h2>
                         <div class="code-img">
@@ -144,7 +143,7 @@ servicesMenu.addEventListener('click', () => {
                 <div class="about-my info-human-h2">
                     <h2>About my</h2>
                 </div>
-                <div class="about-my info-human-elem">
+                <div class="about-my info-human-elem" id="aboutBlock">
                         <p>I study Front-end development on my own.</p>
                         <p>I passed the last stage 0 set at The Rolling Stones School, I have a <a target="_blank" href="https://app.rs.school/certificate/n71rz8ca">certificate </a> of successful completion.</p>
                         <p>Failed the first attempt of training at stage 1.</p>
@@ -154,7 +153,7 @@ servicesMenu.addEventListener('click', () => {
                 <div class="contacts info-human-h2">
                     <h2>Contacts</h2>
                 </div>
-                <div class="contacts info-human-elem">
+                <div class="contacts info-human-elem" id="contactsBlock">
                     <ul>
                         <li class="contact">
                             <a target="_blank" href="tel:+7(930)714-65-64">
@@ -185,7 +184,7 @@ servicesMenu.addEventListener('click', () => {
                 <div class="skills info-human-h2">
                     <h2>Skills</h2>
                 </div>
-                <div class="skills info-human-elem">
+                <div class="skills info-human-elem" id="skillsBlock">
                     <table>
                         <tr>
                             <td>HTML</td>
@@ -243,7 +242,7 @@ servicesMenu.addEventListener('click', () => {
                 <div class="language info-human-h2">
                     <h2>Language</h2>
                 </div>
-                <div class="language info-human-elem">
+                <div class="language info-human-elem" id="languageBlock">
                     <div class="language-elem-wrap">
                         <div class="english language-elem">
                             <div class="language-elem-percent">
@@ -285,7 +284,7 @@ servicesMenu.addEventListener('click', () => {
 
     <footer>
         <div class="container">
-            <div class="gratitude">
+            <div class="gratitude" id="gratitudeBlock">
                     <a target="_blank" href="https://github.com/pogorelova-v">
                     <img src="assets/github.png" alt="github">
                     GitHub
